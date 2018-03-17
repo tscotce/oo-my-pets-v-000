@@ -2,7 +2,11 @@ require 'pry'
 
 class Owner
   
+<<<<<<< HEAD
   attr_accessor :name, :pets  
+=======
+  attr_accessor :name  
+>>>>>>> bb5ce95899f4e1e5e3bbf817823b64d703b249cb
   attr_reader :species
   
   @@all = []
@@ -17,7 +21,10 @@ class Owner
     @species = "human"
     @@all << self
     @@owner_counter +=1
+<<<<<<< HEAD
     @pets = {:fishes => [], :dogs => [], :cats => []}
+=======
+>>>>>>> bb5ce95899f4e1e5e3bbf817823b64d703b249cb
   end
 
   def self.count
@@ -33,6 +40,7 @@ class Owner
     return "I am a #{@species}."
   end
   
+<<<<<<< HEAD
   def buy_fish(name)
     fish = Fish.new(name)
     @pets[:fishes] << fish
@@ -74,4 +82,6 @@ class Owner
     return "I have #{@pets[:fishes].length} fish, #{@pets[:dogs].length} dog(s), and #{@pets[:cats].length} cat(s)."
   end
   
+=======
+>>>>>>> bb5ce95899f4e1e5e3bbf817823b64d703b249cb
 end
